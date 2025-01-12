@@ -107,5 +107,51 @@
     <div style="background-color: #171819;">
         <br>
     </div>
+    <!--Doação-Footer-->
+    <footer class="text-light py-4" style="background-color: #171819;">
+        <div class="container">
+          <div class="row align-items-center text-center text-md-start">
+  
+            <!-- QR Code à esquerda -->
+            <div class="col-md-4 mb-3 mb-md-0">
+              <img src="../img/pix.jpg" alt="QR Code para Doações" class="img-fluid rounded shadow" style="max-width: 100%; border-radius: 10px;">
+            </div>
+          
+            <!-- Texto no meio -->
+            <div class="col-md-6 mb-3 mb-md-0">
+              <h3 class="fw-bold mb-3" style="color: #e1bf9b;">Apoie o Projeto Takuya! <img src="../img/icon.png" alt="takuya" width="54px" height="54px"></h3>
+              <p class="mb-2">Contribua com qualquer valor para ajudar a construção do bot Takuya. Sua doação é essencial para continuar melhorando o projeto e garantir uma experiência única para todos os jogadores.</p>
+              <p class="mb-2">Doações a partir de <strong>R$5,00</strong> concederão um cargo especial no servidor. Envie o comprovante para o Adm via privado e garanta o seu bônus!</p>
+              <p class="fst-italic" style="color: #e1bf9b;">Garantimos que o dinheiro doado será utilizado exclusivamente para investir no desenvolvimento do bot Takuya e melhorias no servidor. Todos os depósitos são feitos em uma conta separada, com total transparência.</p>
+            </div>
+          
+            <!-- Copiar chave à direita -->
+            <div class="col-md-2 text-center">
+              <h4 class="fw-bold" style="color: #e1bf9b;">Chave Pix:</h4>
+              <p id="pix-key" class="fw-bold mb-3">aba0fcf4-98c3-408a-b183-5ec84bd93041</p>
+              <button style="background-color:#e1bf9b;" class="btn text-dark fw-bold" onclick="copyPixKey()">Copiar Chave Pix</button>
+            </div>
+          
+          </div>
+        
+          <!-- Texto de agradecimento abaixo -->
+          <div class="text-center mt-4">
+            <p class="">Deus abençoe a todos! Obrigado pelo apoio ao nosso projeto!</p>
+          </div>
+        </div>
+      </footer>
+      <div class="text-center text-light mt-3">
+        <p class="mb-0">&copy; 2025 Takuya Project. Todos os direitos reservados.</p>
+        <p class="small">Desenvolvido com dedicação para a comunidade RPG. <br> Ícones e imagens pertencem aos seus respectivos proprietários.</p>
+      </div>
+      <script>
+        // Função para copiar a chave Pix para a área de transferência
+        function copyPixKey() {
+          const copyText = document.getElementById("pix-key").innerText;
+          navigator.clipboard.writeText(copyText).then(() => {
+            alert("Chave Pix copiada para a área de transferência!");
+          });
+        }
+      </script>
 </body>
 </html>
